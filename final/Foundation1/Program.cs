@@ -1,9 +1,18 @@
 using System;
+using System.Windows.Forms;
 
-class Program
+using hash.Game;
+
+namespace hash
 {
-    static void Main(string[] args)
+    static class Program
     {
-        Console.WriteLine("Hello Foundation1 World!");
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Battlefield());
+        }
     }
 }
